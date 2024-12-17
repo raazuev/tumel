@@ -1,0 +1,23 @@
+.search_panel
+    display: flex
+    flex-direction: column
+    margin-top: 30px
+    padding: 25px
+    background-color: #f1f1f1
+    border-radius: 4px
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, .15)
+    .form_control
+        padding: 16px
+        border: 1px solid #ccc
+        border-radius: 20px
+        outline: none
+        transition: border-color 0.3s
+        &:focus
+            border-color: #3d5a80
+        &::placeholder
+            position: absolute
+            z-index: 2
+            transition: all .5s ease
+        &:focus::placeholder
+            font-size: 10px
+            transform: translateY(-10px)

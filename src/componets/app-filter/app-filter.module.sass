@@ -1,0 +1,27 @@
+.filter_group
+    display: flex
+    justify-content: space-evenly
+    gap: 1.1em
+    margin: 20px
+    .btn_filter
+        width: 100%
+        min-height: 4em
+        box-shadow: 15px 15px 30px rgba(0, 0, 0, .15)
+        background-color: #3d5a80
+        color: #fff
+        border: none
+        border-radius: 29px
+        font-size: 0.9rem
+        transition: transform .3s ease
+        &:hover
+            color: black
+            background-color: #fff
+            transform: scale(1.05)
+        &:focus
+            color: black
+            background-color: #fff
+@media screen and ( max-width: 600px )
+    .filter_group
+        .btn_filter
+            font-size: 0.7rem
+    

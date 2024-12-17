@@ -1,0 +1,45 @@
+li
+    padding: 15px 20px
+    border-bottom: 1px solid #3d5a80
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    gap: 1em
+    justify-content: space-between
+    align-items: center
+    align-content: center
+    &:last-child
+        border-bottom: none
+    span
+        line-height: 35px
+        font-size: 20px
+        cursor: pointer
+        min-width: 550px
+        &:hover
+            color: red
+    input
+        background-color: #fff
+        width: 40%
+        line-height: 35px
+        font-size: 1em
+        text-align: center
+        border-radius: 2em
+        border: 0
+    .listGroupIcons
+        cursor: pointer
+        display: flex
+        gap: 1.3em
+        i
+            transition: 0.3s all
+            &:hover
+                scale: 1.2
+        i:nth-child(3)
+            color: red
+            cursor: pointer
+            opacity: 0
+            transition: 0.3s all
+            transform: translateX(30px)
+    &.like
+        .listGroupIcons i:nth-child(3)
+            opacity: 1
+            transform: translateX(0px)
