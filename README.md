@@ -12,6 +12,7 @@ This project is an employee management application that allows users to add, del
 - CSS Module(Sass)
 - Material UI
 - Local Storage
+- Class Component
 
 ## Installation
 
